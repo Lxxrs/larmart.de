@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>larmart.de</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        :root {
+            --primary-bg-color: #1b4d3e; /* Tiefes Grün für den Hintergrund */
+            --section-bg-color: #212c42; /* Dunkles Blau für die Abschnitte */
+            --text-color: #f0f0f0; /* Hellere Farbe für bessere Lesbarkeit */
+            --accent-color: #00bcd4; /* Akzentfarbe für Links und soziale Medien */
+            --hover-color: #0097a7; /* Hover-Effekt Farbe */
+            --base-font-size: 16px; /* Basis-Schriftgröße */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: var(--text-color);
+            background-color: var(--primary-bg-color);
+            line-height: 1.6;
+            #font-size: var(--base-font-size);
+        }
+
+        header, section, footer {
+            background-color: var(--section-bg-color);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .socials a, a {
+            margin: 10px;
+            font-size: 24px;
+            color: var(--accent-color);
+	    text-decoration: none;
+        }
+
+        .socials a:hover, a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+
+        #contacts p {
+            font-size: var(--base-font-size); /* Stellt sicher, dass die Schriftgröße konsistent bleibt */
+        }
+
+        #contacts a {
+            font-size: inherit; /* Vererbt die Schriftgröße des Eltern-Elements */
+        }
+
+        @media (max-width: 600px) {
+            header img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .socials a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Herzlich Willkommen auf meiner Website!</h1>
+        <img src="lars_memoji.jpg" alt="Lars' Memoji">
+        <p>Ich bin Lars, Mitte 20 und komme aus NRW.</p>
+        <p>Ich beschäftige mich gerne mit IT-Sicherheit, Privatsphäre im Internet, Open Source und Ethical Hacking.</p>
+    </header>
+
+    <section id="TryHackMe">
+        <h2>Mein TryHackMe</h2>
+        <ul>
+            <li>
+                <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3426669" style="border:none;"></iframe>
+                <p><img src="tryhackme_certificate.png" alt="Lars' TryHackMe Certificate" style="max-width: 40%; height: auto;"></p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="socials">
+        <h2>Soziale Medien</h2>
+        <div class="socials">
+            <a href="https://mastodon.online/@lxrs/" aria-label="Mastodon">Mastodon</a>
+            <a href="https://linkedin.com/in/lrs-m/" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://codeberg.org/Lxrs/" aria-label="Codeberg">Codeberg</a>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Kontakt</h2>
+        <p>Signal: <a href="https://signal.me/#eu/ckC_oGqqyOXvnQE_GX2syStPgfip87lPFXsNvGn9Ytpe8BkapedCuKLiesQQgivm/">lars.04</a></p>
+        <p>E-Mail: <a href="mailto:kontakt@larmart.de">kontakt@larmart.de</a></p>
+    </section>
+
+    <footer>
+        <p><img src="creative_commons.png" alt="Creative Commons" style="width: 13px; height: 13px;"> Lars</p>
+    </footer>
+</body>
+</html>
