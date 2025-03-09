@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>larmart.de</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        :root {
+            --primary-bg-color: #1b4d3e; /* Tiefes Grün für den Hintergrund */
+            --section-bg-color: #212c42; /* Dunkles Blau für die Abschnitte */
+            --text-color: #f0f0f0; /* Hellere Farbe für bessere Lesbarkeit */
+            --accent-color: #00bcd4; /* Akzentfarbe für Links und soziale Medien */
+            --hover-color: #0097a7; /* Hover-Effekt Farbe */
+            --base-font-size: 16px; /* Basis-Schriftgröße */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: var(--text-color);
+            background-color: var(--primary-bg-color);
+            line-height: 1.6;
+            font-size: var(--base-font-size);
+        }
+
+        header, section, footer {
+            background-color: var(--section-bg-color);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 20px 0;
+            object-fit: cover; /* Ensures image maintains aspect ratio */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+        }
+
+        .socials a, a {
+            margin: 10px;
+            font-size: 24px;
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .socials a:hover, a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+
+        #contacts p {
+            font-size: var(--base-font-size);
+        }
+
+        #contacts a {
+            font-size: inherit;
+        }
+        
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-tag {
+            background-color: rgba(0, 188, 212, 0.2);
+            border-radius: 20px;
+            padding: 5px 12px;
+            font-size: 14px;
+        }
+
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 600px) {
+            header img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .socials a {
+                font-size: 18px;
+            }
+        }
+        
+        .cc-license {
+            display: inline-block;
+            margin-left: 3px;
+            vertical-align: text-bottom;
+            height: 22px !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Herzlich Willkommen auf meiner Website!</h1>
+        <img src="lars_memoji.jpg" alt="Lars' Memoji - Eine digitale Darstellung von mir">
+        <p>Ich bin Lars, Mitte 20 und komme aus NRW.</p>
+        <p>Ich beschäftige mich gerne mit IT-Sicherheit, Privatsphäre im Internet, Open Source und Ethical Hacking.</p>
+        
+        <!-- Added skills section -->
+        <div class="skills-container">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">macOS</span>
+            <span class="skill-tag">Privacy</span>
+            <span class="skill-tag">Open Source</span>
+            <span class="skill-tag">Raspiberry Pi</span>
+        </div>
+    </header>
+
+    <!-- Added Projects Section -->
+    <section id="projects">
+        <h2>Meine Projekte</h2>
+        <div class="project-card">
+            <h3>Privacy Guide</h3>
+            <p>Eine Zusammenstellung von Tools und Tipps zum Schutz der Privatsphäre im Internet, einschließlich Browser-Konfigurationen und VPN-Empfehlungen.</p>
+            <a href="#">Zum Projekt →</a>
+        </div>
+        <div class="project-card">
+            <h3>Security Tool</h3>
+            <p>Ein Open-Source-Tool zur Überwachung von Netzwerkverkehr und zur Erkennung potenzieller Sicherheitslücken.</p>
+            <a href="#">Zum Projekt →</a>
+        </div>
+    </section>
+
+    <section id="TryHackMe">
+        <h2>Mein TryHackMe</h2>
+        <ul>
+            <li>
+                <!-- Changed from iframe to image for better performance -->
+                <img src="tryhackme_badge.png" alt="Lars' TryHackMe Badge - Zeigt meine Ranglistenposition und erreichte Punkte" class="responsive-img" style="max-width: 40%; height: auto;">
+                <p><img src="tryhackme_certificate.png" alt="Lars' TryHackMe Certificate - Zertifikat für abgeschlossene Cybersicherheitskurse" class="responsive-img" style="max-width: 40%; height: auto;"></p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="socials">
+        <h2>Soziale Medien</h2>
+        <div class="socials">
+            <a href="https://mastodon.online/@lxrs/" aria-label="Mastodon">Mastodon</a>
+            <a href="https://linkedin.com/in/lrs-m/" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://codeberg.org/lxrs/" aria-label="Codeberg">Codeberg</a>
+            <!-- Added GitHub as many tech professionals use it -->
+            <a href="https://github.com/lxxrs/" aria-label="GitHub">GitHub</a>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2>Kontakt</h2>
+        <p>Signal: <a href="https://signal.me/#eu/ckC_oGqqyOXvnQE_GX2syStPgfip87lPFXsNvGn9Ytpe8BkapedCuKLiesQQgivm/">lars.04</a></p>
+        <p>E-Mail: <a href="mailto:kontakt@larmart.de">kontakt@larmart.de</a></p>
+    </section>
+
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#">This work is licensed under
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
+                CC BY-NC-SA 4.0
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons Logo" class="cc-license">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="Attribution Icon" class="cc-license">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="Non-Commercial Icon" class="cc-license">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="Share-Alike Icon" class="cc-license">
+            </a>
+        </p>
+        <p>© 2025 Lars M. | Letzte Aktualisierung: März 2025</p>
+    </footer>
+</body>
+</html>
